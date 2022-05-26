@@ -1,0 +1,9 @@
+SUCCESS: Config file loaded.
+INFO: Config file contents:
+
+	ENGINE_HOME=I:\\Graphics Programming
+	SYSTEM_TYPE=Windows
+	SHADER_DIR=\\res\\shaders
+
+SUCCESS: Created perspective projection.
+SUCCESS: Initialized Render Engine.

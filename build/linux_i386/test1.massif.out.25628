@@ -1,0 +1,1949 @@
+desc: (none)
+cmd: ./RenderTest.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2880010
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=3848230
+mem_heap_B=166639
+mem_heap_extra_B=5873
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=5256883
+mem_heap_B=166639
+mem_heap_extra_B=5873
+mem_stacks_B=0
+heap_tree=detailed
+n15: 166639 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+ n1: 21152 0x704C8DA: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21152 0x705060F: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21152 0x60FA808: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 21152 0x60EB390: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 21152 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+      n1: 21152 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 21152 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+        n0: 21152 0x425C76: main (RenderTest.cpp:21)
+ n1: 16384 0x60EB691: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 16384 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+   n1: 16384 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+    n1: 16384 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+     n0: 16384 0x425C76: main (RenderTest.cpp:21)
+ n0: 13700 in 79 places, all below massif's threshold (1.00%)
+ n1: 8176 0x60F0D20: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 8176 0x60F10B4: _XrmInternalStringToQuark (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 8176 0x6102B4E: XrmInitialize (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 8176 0x60DFD01: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 8176 0x60DFFBC: XGetDefault (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+      n1: 8176 0x6E3D058: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+       n1: 8176 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+        n1: 8176 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+         n1: 8176 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 8176 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+           n1: 8176 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 8176 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 8176 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+              n0: 8176 0x425C76: main (RenderTest.cpp:21)
+ n1: 4680 0x60EB35C: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 4680 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+   n1: 4680 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+    n1: 4680 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+     n0: 4680 0x425C76: main (RenderTest.cpp:21)
+ n1: 4480 0x60EB9F5: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 4480 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+   n1: 4480 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+    n1: 4480 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+     n0: 4480 0x425C76: main (RenderTest.cpp:21)
+ n1: 4096 0x60F0F35: _XrmInternalStringToQuark (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 4096 0x6102B4E: XrmInitialize (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 4096 0x60DFD01: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 4096 0x60DFFBC: XGetDefault (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 4096 0x6E3D058: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+      n1: 4096 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+       n1: 4096 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+        n1: 4096 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 4096 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 4096 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+           n1: 4096 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 4096 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+             n0: 4096 0x425C76: main (RenderTest.cpp:21)
+ n1: 4096 0x614B6B4: _XkbReadGetMapReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 4096 0x614B7B6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 4096 0x614B831: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 4096 0x614B8EB: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 4096 0x6147A87: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+      n1: 4096 0x6147F96: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+       n1: 4096 0x503D995: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 4096 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 4096 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+          n0: 4096 0x425C76: main (RenderTest.cpp:21)
+ n1: 4096 0x5B591D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 4096 0x5B67592: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5B6669A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n1: 4096 0x5B6760C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x5B5AC68: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x5B59B7B: fgets (iofgets.c:53)
+       n1: 4096 0x610CCAE: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+        n1: 4096 0x610D2C5: _XlcResolveLocaleName (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+         n1: 4096 0x6110AB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+          n1: 4096 0x6110041: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+           n1: 4096 0x611087A: _XlcCreateLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+            n1: 4096 0x613168E: _XlcUtf8Loader (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+             n1: 4096 0x6117E4C: _XOpenLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+              n1: 4096 0x6118059: _XrmInitParseInfo (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+               n1: 4096 0x60FFD3E: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+                n1: 4096 0x610335C: XrmGetStringDatabase (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+                 n1: 4096 0x60DFD12: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+                  n1: 4096 0x60DFFBC: XGetDefault (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+                   n1: 4096 0x6E3D058: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+                    n1: 4096 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+                     n1: 4096 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+                      n1: 4096 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                       n1: 4096 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                        n1: 4096 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                         n1: 4096 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                          n1: 4096 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                           n0: 4096 0x425C76: main (RenderTest.cpp:21)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 3600 0x610A9E1: _XlcCreateDefaultCharSet (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 3600 0x610A611: _XlcAddCT (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 3600 0x610A692: _XlcInitCTInfo (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 3600 0x61109A1: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 3600 0x6110041: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+      n1: 3600 0x611087A: _XlcCreateLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+       n1: 3600 0x613168E: _XlcUtf8Loader (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+        n1: 3600 0x6117E4C: _XOpenLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+         n1: 3600 0x6118059: _XrmInitParseInfo (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+          n1: 3600 0x60FFD3E: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+           n1: 3600 0x610335C: XrmGetStringDatabase (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+            n1: 3600 0x60DFD12: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+             n1: 3600 0x60DFFBC: XGetDefault (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+              n1: 3600 0x6E3D058: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+               n1: 3600 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+                n1: 3600 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+                 n1: 3600 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                  n1: 3600 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                   n1: 3600 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                    n1: 3600 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                     n1: 3600 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                      n0: 3600 0x425C76: main (RenderTest.cpp:21)
+ n1: 2664 0x747E1B1: XRenderQueryFormats (in /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0)
+  n1: 2664 0x747E3FD: XRenderQueryVersion (in /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0)
+   n1: 2664 0x6E3CE49: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+    n1: 2664 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+     n1: 2664 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+      n1: 2664 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 2664 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 2664 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 2664 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 2664 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+           n0: 2664 0x425C76: main (RenderTest.cpp:21)
+ n1: 2631 0x610A37E: _XlcAddCT (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 2631 0x610A692: _XlcInitCTInfo (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 2631 0x61109A1: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 2631 0x6110041: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 2631 0x611087A: _XlcCreateLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+      n1: 2631 0x613168E: _XlcUtf8Loader (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+       n1: 2631 0x6117E4C: _XOpenLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+        n1: 2631 0x6118059: _XrmInitParseInfo (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+         n1: 2631 0x60FFD3E: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+          n1: 2631 0x610335C: XrmGetStringDatabase (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+           n1: 2631 0x60DFD12: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+            n1: 2631 0x60DFFBC: XGetDefault (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+             n1: 2631 0x6E3D058: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+              n1: 2631 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+               n1: 2631 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+                n1: 2631 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                 n1: 2631 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                  n1: 2631 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                   n1: 2631 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                    n1: 2631 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                     n0: 2631 0x425C76: main (RenderTest.cpp:21)
+ n1: 2132 0x704CAB1: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 2132 0x705060F: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 2132 0x60FA808: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 2132 0x60EB390: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 2132 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+      n1: 2132 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 2132 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+        n0: 2132 0x425C76: main (RenderTest.cpp:21)
+ n1: 2048 0x614B4B7: _XkbReadGetMapReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 2048 0x614B7B6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 2048 0x614B831: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 2048 0x614B8EB: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 2048 0x6147A87: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+      n1: 2048 0x6147F96: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+       n1: 2048 0x503D995: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 2048 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 2048 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+          n0: 2048 0x425C76: main (RenderTest.cpp:21)
+#-----------
+snapshot=4
+#-----------
+time=5762949
+mem_heap_B=164591
+mem_heap_extra_B=5873
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=7168797
+mem_heap_B=164591
+mem_heap_extra_B=5873
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=8849036
+mem_heap_B=255659
+mem_heap_extra_B=12693
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=9770801
+mem_heap_B=251449
+mem_heap_extra_B=12711
+mem_stacks_B=0
+heap_tree=detailed
+n15: 251449 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+ n1: 39744 0x80AE2B1: ???
+  n2: 39744 0x80AF1DA: ???
+   n1: 22464 0x80AF4A8: ???
+    n1: 22464 0x80DB71B: ???
+     n1: 22464 0x80AFA1F: ???
+      n1: 22464 0x80AAF7F: ???
+       n1: 22464 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 22464 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 22464 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 22464 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+           n0: 22464 0x425C76: main (RenderTest.cpp:21)
+   n1: 17280 0x80AF4EC: ???
+    n1: 17280 0x80DB71B: ???
+     n1: 17280 0x80AFA1F: ???
+      n1: 17280 0x80AAF7F: ???
+       n1: 17280 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 17280 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 17280 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 17280 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+           n0: 17280 0x425C76: main (RenderTest.cpp:21)
+ n0: 33118 in 177 places, all below massif's threshold (1.00%)
+ n1: 21339 0x400BBF4: _dl_new_object (dl-object.c:75)
+  n1: 21339 0x400650B: _dl_map_object_from_fd (dl-load.c:1028)
+   n2: 21339 0x4008C25: _dl_map_object (dl-load.c:2498)
+    n1: 18950 0x400DBA0: openaux (dl-deps.c:63)
+     n1: 18950 0x4010562: _dl_catch_error (dl-error.c:187)
+      n1: 18950 0x400E1E0: _dl_map_object_deps (dl-deps.c:254)
+       n1: 18950 0x40155E0: dl_open_worker (dl-open.c:280)
+        n1: 18950 0x4010562: _dl_catch_error (dl-error.c:187)
+         n1: 18950 0x4014DA7: _dl_open (dl-open.c:660)
+          n1: 18950 0x4E31F07: dlopen_doit (dlopen.c:66)
+           n1: 18950 0x4010562: _dl_catch_error (dl-error.c:187)
+            n1: 18950 0x4E3256F: _dlerror_run (dlerror.c:163)
+             n2: 18950 0x4E31F9F: dlopen@@GLIBC_2.2.5 (dlopen.c:87)
+              n1: 13025 0x50448BF: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 13025 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                n1: 13025 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                 n1: 13025 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                  n0: 13025 0x425C76: main (RenderTest.cpp:21)
+              n1: 5925 0x80D4A37: ???
+               n1: 5925 0x80DB789: ???
+                n1: 5925 0x80AFA1F: ???
+                 n1: 5925 0x80AAF7F: ???
+                  n1: 5925 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                   n1: 5925 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                    n1: 5925 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                     n1: 5925 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                      n0: 5925 0x425C76: main (RenderTest.cpp:21)
+    n0: 2389 in 1 place, below massif's threshold (1.00%)
+ n1: 21152 0x704C8DA: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21152 0x705060F: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21152 0x60FA808: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 21152 0x60EB390: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 21152 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+      n1: 21152 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 21152 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+        n0: 21152 0x425C76: main (RenderTest.cpp:21)
+ n1: 16384 0x60EB691: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 16384 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+   n1: 16384 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+    n1: 16384 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+     n0: 16384 0x425C76: main (RenderTest.cpp:21)
+ n3: 12432 0x80B098C: ???
+  n1: 4144 0x80AF981: ???
+   n1: 4144 0x80AAF7F: ???
+    n1: 4144 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+     n1: 4144 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+      n1: 4144 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 4144 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+        n0: 4144 0x425C76: main (RenderTest.cpp:21)
+  n1: 4144 0x80AF9A8: ???
+   n1: 4144 0x80AAF7F: ???
+    n1: 4144 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+     n1: 4144 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+      n1: 4144 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 4144 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+        n0: 4144 0x425C76: main (RenderTest.cpp:21)
+  n1: 4144 0x80D887A: ???
+   n1: 4144 0x80AFB2F: ???
+    n1: 4144 0x80AAF7F: ???
+     n1: 4144 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+      n1: 4144 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 4144 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 4144 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+         n0: 4144 0x425C76: main (RenderTest.cpp:21)
+ n1: 8176 0x60F0D20: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 8176 0x60F10B4: _XrmInternalStringToQuark (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 8176 0x6102B4E: XrmInitialize (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 8176 0x60DFD01: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 8176 0x60DFFBC: XGetDefault (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+      n1: 8176 0x6E3D058: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+       n1: 8176 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+        n1: 8176 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+         n1: 8176 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 8176 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+           n1: 8176 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 8176 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 8176 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+              n0: 8176 0x425C76: main (RenderTest.cpp:21)
+ n1: 4680 0x60EB35C: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 4680 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+   n1: 4680 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+    n1: 4680 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+     n0: 4680 0x425C76: main (RenderTest.cpp:21)
+ n1: 4480 0x60EB9F5: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 4480 0x503D778: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+   n1: 4480 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+    n1: 4480 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+     n0: 4480 0x425C76: main (RenderTest.cpp:21)
+ n1: 4096 0x60F0F35: _XrmInternalStringToQuark (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 4096 0x6102B4E: XrmInitialize (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 4096 0x60DFD01: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 4096 0x60DFFBC: XGetDefault (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 4096 0x6E3D058: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+      n1: 4096 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+       n1: 4096 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+        n1: 4096 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 4096 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 4096 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+           n1: 4096 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 4096 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+             n0: 4096 0x425C76: main (RenderTest.cpp:21)
+ n1: 4096 0x614B6B4: _XkbReadGetMapReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 4096 0x614B7B6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 4096 0x614B831: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 4096 0x614B8EB: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 4096 0x6147A87: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+      n1: 4096 0x6147F96: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+       n1: 4096 0x503D995: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 4096 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 4096 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+          n0: 4096 0x425C76: main (RenderTest.cpp:21)
+ n1: 3600 0x610A9E1: _XlcCreateDefaultCharSet (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+  n1: 3600 0x610A611: _XlcAddCT (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+   n1: 3600 0x610A692: _XlcInitCTInfo (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+    n1: 3600 0x61109A1: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+     n1: 3600 0x6110041: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+      n1: 3600 0x611087A: _XlcCreateLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+       n1: 3600 0x613168E: _XlcUtf8Loader (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+        n1: 3600 0x6117E4C: _XOpenLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+         n1: 3600 0x6118059: _XrmInitParseInfo (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+          n1: 3600 0x60FFD3E: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+           n1: 3600 0x610335C: XrmGetStringDatabase (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+            n1: 3600 0x60DFD12: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+             n1: 3600 0x60DFFBC: XGetDefault (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+              n1: 3600 0x6E3D058: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+               n1: 3600 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+                n1: 3600 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+                 n1: 3600 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                  n1: 3600 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                   n1: 3600 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                    n1: 3600 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+                     n1: 3600 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                      n0: 3600 0x425C76: main (RenderTest.cpp:21)
+ n1: 2784 0x40120BC: _dl_check_map_versions (dl-version.c:293)
+  n1: 2784 0x4015B17: dl_open_worker (dl-open.c:286)
+   n1: 2784 0x4010562: _dl_catch_error (dl-error.c:187)
+    n1: 2784 0x4014DA7: _dl_open (dl-open.c:660)
+     n1: 2784 0x4E31F07: dlopen_doit (dlopen.c:66)
+      n1: 2784 0x4010562: _dl_catch_error (dl-error.c:187)
+       n1: 2784 0x4E3256F: _dlerror_run (dlerror.c:163)
+        n1: 2784 0x4E31F9F: dlopen@@GLIBC_2.2.5 (dlopen.c:87)
+         n0: 2784 in 2 places, all below massif's threshold (1.00%)
+ n1: 2664 0x747E1B1: XRenderQueryFormats (in /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0)
+  n1: 2664 0x747E3FD: XRenderQueryVersion (in /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0)
+   n1: 2664 0x6E3CE49: _XcursorGetDisplayInfo (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+    n1: 2664 0x6E3D0B7: XcursorSupportsARGB (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+     n1: 2664 0x6E3B812: XcursorImageLoadCursor (in /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2)
+      n1: 2664 0x503D6B5: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 2664 0x503D728: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 2664 0x503DE3A: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 2664 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 2664 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+           n0: 2664 0x425C76: main (RenderTest.cpp:21)
+#-----------
+snapshot=8
+#-----------
+time=10970292
+mem_heap_B=251665
+mem_heap_extra_B=12735
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=12425188
+mem_heap_B=887722
+mem_heap_extra_B=55142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=13329650
+mem_heap_B=891070
+mem_heap_extra_B=55474
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=23660447
+mem_heap_B=891546
+mem_heap_extra_B=55518
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=24930232
+mem_heap_B=1373994
+mem_heap_extra_B=89462
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=32744710
+mem_heap_B=1374502
+mem_heap_extra_B=89514
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=34318787
+mem_heap_B=1399274
+mem_heap_extra_B=90622
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=35389474
+mem_heap_B=1417866
+mem_heap_extra_B=91286
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=36946643
+mem_heap_B=1400278
+mem_heap_extra_B=89450
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=38038751
+mem_heap_B=1555894
+mem_heap_extra_B=89514
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=39169851
+mem_heap_B=1687140
+mem_heap_extra_B=93380
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=40102606
+mem_heap_B=1694669
+mem_heap_extra_B=93603
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=41104137
+mem_heap_B=1813532
+mem_heap_extra_B=103660
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=42507231
+mem_heap_B=1803759
+mem_heap_extra_B=102369
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=43419280
+mem_heap_B=1812699
+mem_heap_extra_B=102997
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=44780021
+mem_heap_B=1814099
+mem_heap_extra_B=102989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=46095500
+mem_heap_B=1874017
+mem_heap_extra_B=108111
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=47076787
+mem_heap_B=2014737
+mem_heap_extra_B=116767
+mem_stacks_B=0
+heap_tree=detailed
+n7: 2014737 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 1587884 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n8: 1495920 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n0: 131472 in 139 places, all below massif's threshold (1.00%)
+   n2: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 46320 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 46320 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 46320 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 46320 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 46320 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 46320 0x80DB845: ???
+          n1: 46320 0x80AFA1F: ???
+           n1: 46320 0x80AAF7F: ???
+            n1: 46320 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 46320 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 46320 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 46320 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 46320 0x425C76: main (RenderTest.cpp:21)
+    n1: 40176 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 40176 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 40176 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 40176 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 40176 0x80DB845: ???
+         n1: 40176 0x80AFA1F: ???
+          n1: 40176 0x80AAF7F: ???
+           n1: 40176 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 40176 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 40176 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 40176 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 40176 0x425C76: main (RenderTest.cpp:21)
+   n2: 34040 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 29072 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 29072 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 29072 in 7 places, all below massif's threshold (1.00%)
+    n0: 4968 in 5 places, all below massif's threshold (1.00%)
+   n1: 30336 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 30336 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 30336 in 7 places, all below massif's threshold (1.00%)
+   n1: 30336 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 30336 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 30336 in 7 places, all below massif's threshold (1.00%)
+   n1: 24000 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 24000 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 24000 in 6 places, all below massif's threshold (1.00%)
+  n0: 64300 in 150 places, all below massif's threshold (1.00%)
+  n1: 27664 0x9C8C9FA: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n0: 27664 in 2 places, all below massif's threshold (1.00%)
+ n0: 239491 in 351 places, all below massif's threshold (1.00%)
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+ n2: 41216 0x80D4D77: ???
+  n1: 23296 0x80DBAFD: ???
+   n1: 23296 0x80AFA1F: ???
+    n1: 23296 0x80AAF7F: ???
+     n1: 23296 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+      n1: 23296 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 23296 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 23296 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+         n0: 23296 0x425C76: main (RenderTest.cpp:21)
+  n0: 17920 in 1 place, below massif's threshold (1.00%)
+ n1: 28224 0x9DBE770: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n0: 28224 in 2 places, all below massif's threshold (1.00%)
+ n1: 22696 0x9B3EC78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n1: 22696 0x9D8E691: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n1: 22696 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 22696 0x80DB36D: ???
+     n1: 22696 0x80AA8A0: ???
+      n1: 22696 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+       n1: 22696 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 22696 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 22696 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+          n0: 22696 0x425C76: main (RenderTest.cpp:21)
+ n1: 22522 0x400BBF4: _dl_new_object (dl-object.c:75)
+  n1: 22522 0x400650B: _dl_map_object_from_fd (dl-load.c:1028)
+   n1: 22522 0x4008C25: _dl_map_object (dl-load.c:2498)
+    n0: 22522 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=48301255
+mem_heap_B=2768672
+mem_heap_extra_B=168744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=49204640
+mem_heap_B=3425114
+mem_heap_extra_B=219454
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=50108407
+mem_heap_B=4080640
+mem_heap_extra_B=270592
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4080640 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3648039 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n19: 3541072 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n0: 738928 in 622 places, all below massif's threshold (1.00%)
+   n2: 300032 0x9C16618: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 187904 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 187904 in 287 places, all below massif's threshold (1.00%)
+    n0: 112128 in 35 places, all below massif's threshold (1.00%)
+   n1: 224128 0x9C7F416: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 224128 in 395 places, all below massif's threshold (1.00%)
+   n2: 220616 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 174064 in 88 places, all below massif's threshold (1.00%)
+    n1: 46552 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 46552 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 46552 in 10 places, all below massif's threshold (1.00%)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n2: 121888 0x9C1663B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 45552 in 35 places, all below massif's threshold (1.00%)
+   n1: 112512 0x9C7D5E7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n2: 112512 0x9C1664C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 70464 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 70464 in 287 places, all below massif's threshold (1.00%)
+     n0: 42048 in 35 places, all below massif's threshold (1.00%)
+   n2: 89752 0x9C7F202: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16675: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 13416 in 12 places, all below massif's threshold (1.00%)
+   n2: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 46320 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 46320 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 46320 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 46320 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 46320 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 46320 0x80DB845: ???
+          n1: 46320 0x80AFA1F: ???
+           n1: 46320 0x80AAF7F: ???
+            n1: 46320 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 46320 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 46320 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 46320 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 46320 0x425C76: main (RenderTest.cpp:21)
+    n0: 40176 in 1 place, below massif's threshold (1.00%)
+   n1: 75592 0x9C7F1A4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 75592 in 72 places, all below massif's threshold (1.00%)
+   n1: 65024 0x9C7F3CD: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 65024 in 96 places, all below massif's threshold (1.00%)
+   n1: 64624 0x9C7F0F4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 64624 in 2 places, all below massif's threshold (1.00%)
+   n1: 48576 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 48576 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 48576 in 10 places, all below massif's threshold (1.00%)
+   n1: 48576 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 48576 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 48576 in 10 places, all below massif's threshold (1.00%)
+   n1: 48000 0x9C7F05F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 48000 in 64 places, all below massif's threshold (1.00%)
+   n1: 46464 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 46464 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 46464 in 9 places, all below massif's threshold (1.00%)
+   n1: 45312 0x9C1A1C7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 45312 in 236 places, all below massif's threshold (1.00%)
+   n1: 45312 0x9C1A19C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 45312 in 236 places, all below massif's threshold (1.00%)
+  n0: 106967 in 151 places, all below massif's threshold (1.00%)
+ n0: 359897 in 355 places, all below massif's threshold (1.00%)
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+#-----------
+snapshot=29
+#-----------
+time=51472111
+mem_heap_B=5010399
+mem_heap_extra_B=345377
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=52497199
+mem_heap_B=5529309
+mem_heap_extra_B=383555
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5529309 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5089667 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n20: 4963664 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n0: 1515704 in 864 places, all below massif's threshold (1.00%)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n3: 392472 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 224664 in 121 places, all below massif's threshold (1.00%)
+    n1: 96048 0x9C22EC0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 96048 in 522 places, all below massif's threshold (1.00%)
+    n1: 71760 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 71760 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 71760 in 16 places, all below massif's threshold (1.00%)
+   n2: 300032 0x9C16618: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 187904 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 187904 in 287 places, all below massif's threshold (1.00%)
+    n0: 112128 in 35 places, all below massif's threshold (1.00%)
+   n1: 251264 0x9C7F416: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 251264 in 426 places, all below massif's threshold (1.00%)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n1: 153560 0x9C7F1A4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 153560 in 101 places, all below massif's threshold (1.00%)
+   n2: 121888 0x9C1663B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 45552 in 35 places, all below massif's threshold (1.00%)
+   n2: 120848 0x9C7F202: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16675: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 44512 in 17 places, all below massif's threshold (1.00%)
+   n1: 112512 0x9C7D5E7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n2: 112512 0x9C1664C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 70464 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 70464 in 287 places, all below massif's threshold (1.00%)
+     n0: 42048 in 35 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E51: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E7E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 89728 0x9C7F3CD: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 89728 in 130 places, all below massif's threshold (1.00%)
+   n1: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 86496 in 2 places, all below massif's threshold (1.00%)
+   n1: 84864 0x9C7F05F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 84864 in 86 places, all below massif's threshold (1.00%)
+   n1: 79344 0x9C22EE6: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 79344 in 522 places, all below massif's threshold (1.00%)
+   n1: 79072 0x9C7F0F4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 79072 in 2 places, all below massif's threshold (1.00%)
+   n1: 74880 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 74880 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 74880 in 16 places, all below massif's threshold (1.00%)
+   n1: 74880 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 74880 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 74880 in 16 places, all below massif's threshold (1.00%)
+   n1: 66432 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 66432 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 66432 in 14 places, all below massif's threshold (1.00%)
+  n0: 126003 in 151 places, all below massif's threshold (1.00%)
+ n0: 366938 in 355 places, all below massif's threshold (1.00%)
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+#-----------
+snapshot=31
+#-----------
+time=53217733
+mem_heap_B=5779667
+mem_heap_extra_B=401349
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=54788707
+mem_heap_B=5969301
+mem_heap_extra_B=415211
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=55811229
+mem_heap_B=6016801
+mem_heap_extra_B=418903
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=57196538
+mem_heap_B=6031503
+mem_heap_extra_B=419465
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=57822656
+mem_heap_B=6033815
+mem_heap_extra_B=419377
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=59169329
+mem_heap_B=6020904
+mem_heap_extra_B=416736
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=100967455
+mem_heap_B=7332136
+mem_heap_extra_B=416752
+mem_stacks_B=0
+heap_tree=detailed
+n4: 7332136 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5554109 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n21: 5416016 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n0: 1672928 in 1356 places, all below massif's threshold (1.00%)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n3: 427616 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 238464 in 127 places, all below massif's threshold (1.00%)
+    n1: 96048 0x9C22EC0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 96048 in 522 places, all below massif's threshold (1.00%)
+    n1: 93104 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 93104 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 93104 in 20 places, all below massif's threshold (1.00%)
+   n2: 300032 0x9C16618: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 187904 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 187904 in 287 places, all below massif's threshold (1.00%)
+    n0: 112128 in 35 places, all below massif's threshold (1.00%)
+   n1: 269696 0x9C7F416: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 269696 in 570 places, all below massif's threshold (1.00%)
+   n1: 170456 0x9C7F1A4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 170456 in 113 places, all below massif's threshold (1.00%)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n1: 130000 0x9C7F202: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 130000 in 106 places, all below massif's threshold (1.00%)
+   n1: 124032 0x9C7F05F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 124032 in 109 places, all below massif's threshold (1.00%)
+   n1: 121888 0x9C1663B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 121888 in 36 places, all below massif's threshold (1.00%)
+   n1: 112512 0x9C7D5E7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 112512 0x9C1664C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 112512 in 36 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E51: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E7E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 95616 0x9C7F3CD: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 95616 in 176 places, all below massif's threshold (1.00%)
+   n1: 92928 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 92928 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 92928 in 18 places, all below massif's threshold (1.00%)
+   n1: 89488 0x9C7F0F4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 89488 in 2 places, all below massif's threshold (1.00%)
+   n1: 88992 0x9C16DF3: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 88992 in 11 places, all below massif's threshold (1.00%)
+   n1: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 86496 in 2 places, all below massif's threshold (1.00%)
+   n1: 79344 0x9C22EE6: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 79344 in 522 places, all below massif's threshold (1.00%)
+  n0: 138093 in 161 places, all below massif's threshold (1.00%)
+ n2: 1073664 0x40707C: stbi__malloc(unsigned long) (stb_image.h:838)
+  n1: 1049088 0x416D73: stbi_zlib_decode_malloc_guesssize_headerflag (stb_image.h:4180)
+   n1: 1049088 0x419A68: stbi__parse_png_file(stbi__png*, int, int) (stb_image.h:4827)
+    n1: 1049088 0x419E03: stbi__do_png(stbi__png*, int*, int*, int*, int, stbi__result_info*) (stb_image.h:4885)
+     n1: 1049088 0x419FEA: stbi__png_load(stbi__context*, int*, int*, int*, int, stbi__result_info*) (stb_image.h:4915)
+      n1: 1049088 0x40742B: stbi__load_main(stbi__context*, int*, int*, int*, int, stbi__result_info*, int) (stb_image.h:962)
+       n1: 1049088 0x4079ED: stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) (stb_image.h:1067)
+        n1: 1049088 0x407D89: stbi_load_from_file (stb_image.h:1153)
+         n2: 1049088 0x407CF0: stbi_load (stb_image.h:1143)
+          n1: 1049088 0x425EBD: SceneManager::SceneManager() (SceneManager.cpp:63)
+           n0: 1049088 0x425C85: main (RenderTest.cpp:23)
+          n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 24576 in 2 places, all below massif's threshold (1.00%)
+ n0: 442219 in 368 places, all below massif's threshold (1.00%)
+ n1: 262144 0x419901: stbi__parse_png_file(stbi__png*, int, int) (stb_image.h:4811)
+  n1: 262144 0x419E03: stbi__do_png(stbi__png*, int*, int*, int*, int, stbi__result_info*) (stb_image.h:4885)
+   n1: 262144 0x419FEA: stbi__png_load(stbi__context*, int*, int*, int*, int, stbi__result_info*) (stb_image.h:4915)
+    n1: 262144 0x40742B: stbi__load_main(stbi__context*, int*, int*, int*, int, stbi__result_info*, int) (stb_image.h:962)
+     n1: 262144 0x4079ED: stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) (stb_image.h:1067)
+      n1: 262144 0x407D89: stbi_load_from_file (stb_image.h:1153)
+       n2: 262144 0x407CF0: stbi_load (stb_image.h:1143)
+        n1: 262144 0x425EBD: SceneManager::SceneManager() (SceneManager.cpp:63)
+         n0: 262144 0x425C85: main (RenderTest.cpp:23)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=163197506
+mem_heap_B=8118568
+mem_heap_extra_B=416752
+mem_stacks_B=0
+heap_tree=peak
+n3: 8118568 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5554109 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n20: 5416016 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n0: 1752272 in 1357 places, all below massif's threshold (1.00%)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n3: 427616 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 238464 in 127 places, all below massif's threshold (1.00%)
+    n1: 96048 0x9C22EC0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 96048 in 522 places, all below massif's threshold (1.00%)
+    n1: 93104 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 93104 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 93104 in 20 places, all below massif's threshold (1.00%)
+   n2: 300032 0x9C16618: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 187904 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 187904 in 287 places, all below massif's threshold (1.00%)
+    n0: 112128 in 35 places, all below massif's threshold (1.00%)
+   n1: 269696 0x9C7F416: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 269696 in 570 places, all below massif's threshold (1.00%)
+   n1: 170456 0x9C7F1A4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 170456 in 113 places, all below massif's threshold (1.00%)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n1: 130000 0x9C7F202: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 130000 in 106 places, all below massif's threshold (1.00%)
+   n1: 124032 0x9C7F05F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 124032 in 109 places, all below massif's threshold (1.00%)
+   n1: 121888 0x9C1663B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 121888 in 36 places, all below massif's threshold (1.00%)
+   n1: 112512 0x9C7D5E7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 112512 0x9C1664C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 112512 in 36 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E51: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E7E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 95616 0x9C7F3CD: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 95616 in 176 places, all below massif's threshold (1.00%)
+   n1: 92928 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 92928 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 92928 in 18 places, all below massif's threshold (1.00%)
+   n1: 89488 0x9C7F0F4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 89488 in 2 places, all below massif's threshold (1.00%)
+   n1: 88992 0x9C16DF3: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 88992 in 11 places, all below massif's threshold (1.00%)
+   n1: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 86496 in 2 places, all below massif's threshold (1.00%)
+  n0: 138093 in 161 places, all below massif's threshold (1.00%)
+ n3: 2122240 0x40707C: stbi__malloc(unsigned long) (stb_image.h:838)
+  n1: 1073152 0x4072C9: stbi__malloc_mad3(int, int, int, int) (stb_image.h:905)
+   n1: 1073152 0x4172EA: stbi__create_png_image_raw(stbi__png*, unsigned char*, unsigned int, int, unsigned int, unsigned int, int, int) (stb_image.h:4322)
+    n1: 1073152 0x41860E: stbi__create_png_image(stbi__png*, unsigned char*, unsigned int, int, int, int, int) (stb_image.h:4527)
+     n1: 1073152 0x419B56: stbi__parse_png_file(stbi__png*, int, int) (stb_image.h:4834)
+      n1: 1073152 0x419E03: stbi__do_png(stbi__png*, int*, int*, int*, int, stbi__result_info*) (stb_image.h:4885)
+       n1: 1073152 0x419FEA: stbi__png_load(stbi__context*, int*, int*, int*, int, stbi__result_info*) (stb_image.h:4915)
+        n1: 1073152 0x40742B: stbi__load_main(stbi__context*, int*, int*, int*, int, stbi__result_info*, int) (stb_image.h:962)
+         n1: 1073152 0x4079ED: stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) (stb_image.h:1067)
+          n1: 1073152 0x407D89: stbi_load_from_file (stb_image.h:1153)
+           n2: 1073152 0x407CF0: stbi_load (stb_image.h:1143)
+            n1: 1048576 0x425EBD: SceneManager::SceneManager() (SceneManager.cpp:63)
+             n0: 1048576 0x425C85: main (RenderTest.cpp:23)
+            n0: 24576 in 2 places, all below massif's threshold (1.00%)
+  n1: 1049088 0x416D73: stbi_zlib_decode_malloc_guesssize_headerflag (stb_image.h:4180)
+   n1: 1049088 0x419A68: stbi__parse_png_file(stbi__png*, int, int) (stb_image.h:4827)
+    n1: 1049088 0x419E03: stbi__do_png(stbi__png*, int*, int*, int*, int, stbi__result_info*) (stb_image.h:4885)
+     n1: 1049088 0x419FEA: stbi__png_load(stbi__context*, int*, int*, int*, int, stbi__result_info*) (stb_image.h:4915)
+      n1: 1049088 0x40742B: stbi__load_main(stbi__context*, int*, int*, int*, int, stbi__result_info*, int) (stb_image.h:962)
+       n1: 1049088 0x4079ED: stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) (stb_image.h:1067)
+        n1: 1049088 0x407D89: stbi_load_from_file (stb_image.h:1153)
+         n2: 1049088 0x407CF0: stbi_load (stb_image.h:1143)
+          n1: 1049088 0x425EBD: SceneManager::SceneManager() (SceneManager.cpp:63)
+           n0: 1049088 0x425C85: main (RenderTest.cpp:23)
+          n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 442219 in 369 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=164571346
+mem_heap_B=7196775
+mem_heap_extra_B=416769
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=165470653
+mem_heap_B=7213136
+mem_heap_extra_B=416744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=166821735
+mem_heap_B=7198752
+mem_heap_extra_B=416856
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=167440254
+mem_heap_B=7263333
+mem_heap_extra_B=422283
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=168677563
+mem_heap_B=7369665
+mem_heap_extra_B=431319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=169601567
+mem_heap_B=7256694
+mem_heap_extra_B=422114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=170545821
+mem_heap_B=7296499
+mem_heap_extra_B=425277
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=171493157
+mem_heap_B=7279431
+mem_heap_extra_B=424673
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=173041865
+mem_heap_B=6243669
+mem_heap_extra_B=433331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=174300961
+mem_heap_B=6257285
+mem_heap_extra_B=433003
+mem_stacks_B=0
+heap_tree=detailed
+n3: 6257285 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5721326 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n21: 5517976 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n0: 1774776 in 1363 places, all below massif's threshold (1.00%)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n3: 427616 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 238464 in 127 places, all below massif's threshold (1.00%)
+    n1: 96048 0x9C22EC0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 96048 in 522 places, all below massif's threshold (1.00%)
+    n1: 93104 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 93104 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 93104 in 20 places, all below massif's threshold (1.00%)
+   n2: 300032 0x9C16618: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 187904 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 187904 in 287 places, all below massif's threshold (1.00%)
+    n0: 112128 in 35 places, all below massif's threshold (1.00%)
+   n1: 269696 0x9C7F416: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 269696 in 570 places, all below massif's threshold (1.00%)
+   n1: 170456 0x9C7F1A4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 170456 in 113 places, all below massif's threshold (1.00%)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n2: 130000 0x9C7F202: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16675: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 53664 in 105 places, all below massif's threshold (1.00%)
+   n1: 124032 0x9C7F05F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 124032 in 109 places, all below massif's threshold (1.00%)
+   n2: 121888 0x9C1663B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 45552 in 35 places, all below massif's threshold (1.00%)
+   n1: 112512 0x9C7D5E7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n2: 112512 0x9C1664C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 70464 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 70464 in 287 places, all below massif's threshold (1.00%)
+     n0: 42048 in 35 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E51: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E7E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 95616 0x9C7F3CD: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 95616 in 176 places, all below massif's threshold (1.00%)
+   n1: 92928 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 92928 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 92928 in 18 places, all below massif's threshold (1.00%)
+   n1: 89600 0x9C7F0F4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 89600 in 2 places, all below massif's threshold (1.00%)
+   n2: 88992 0x9C16DF3: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 69888 0x9C18FC1: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 69888 in 11 places, all below massif's threshold (1.00%)
+    n0: 19104 in 10 places, all below massif's threshold (1.00%)
+   n1: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 86496 in 2 places, all below massif's threshold (1.00%)
+   n1: 79344 0x9C22EE6: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 79344 in 522 places, all below massif's threshold (1.00%)
+  n0: 203350 in 164 places, all below massif's threshold (1.00%)
+ n0: 463255 in 383 places, all below massif's threshold (1.00%)
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+#-----------
+snapshot=49
+#-----------
+time=175237643
+mem_heap_B=6257157
+mem_heap_extra_B=433003
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=175744171
+mem_heap_B=6257773
+mem_heap_extra_B=433027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=176252364
+mem_heap_B=6257225
+mem_heap_extra_B=432983
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=176764665
+mem_heap_B=6257181
+mem_heap_extra_B=432979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=177278216
+mem_heap_B=6257181
+mem_heap_extra_B=432979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=177791266
+mem_heap_B=6257181
+mem_heap_extra_B=432979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=178304306
+mem_heap_B=6257181
+mem_heap_extra_B=432979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=178817356
+mem_heap_B=6257181
+mem_heap_extra_B=432979
+mem_stacks_B=0
+heap_tree=detailed
+n3: 6257181 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5721326 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n21: 5517976 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n0: 1774776 in 1363 places, all below massif's threshold (1.00%)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n3: 427616 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 238464 in 127 places, all below massif's threshold (1.00%)
+    n1: 96048 0x9C22EC0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 96048 in 522 places, all below massif's threshold (1.00%)
+    n1: 93104 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 93104 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 93104 in 20 places, all below massif's threshold (1.00%)
+   n2: 300032 0x9C16618: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 187904 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 187904 in 287 places, all below massif's threshold (1.00%)
+    n0: 112128 in 35 places, all below massif's threshold (1.00%)
+   n1: 269696 0x9C7F416: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 269696 in 570 places, all below massif's threshold (1.00%)
+   n1: 170456 0x9C7F1A4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 170456 in 113 places, all below massif's threshold (1.00%)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n2: 130000 0x9C7F202: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16675: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 53664 in 105 places, all below massif's threshold (1.00%)
+   n1: 124032 0x9C7F05F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 124032 in 109 places, all below massif's threshold (1.00%)
+   n2: 121888 0x9C1663B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 45552 in 35 places, all below massif's threshold (1.00%)
+   n1: 112512 0x9C7D5E7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n2: 112512 0x9C1664C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 70464 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 70464 in 287 places, all below massif's threshold (1.00%)
+     n0: 42048 in 35 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E51: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E7E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 95616 0x9C7F3CD: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 95616 in 176 places, all below massif's threshold (1.00%)
+   n1: 92928 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 92928 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 92928 in 18 places, all below massif's threshold (1.00%)
+   n1: 89600 0x9C7F0F4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 89600 in 2 places, all below massif's threshold (1.00%)
+   n2: 88992 0x9C16DF3: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 69888 0x9C18FC1: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 69888 in 11 places, all below massif's threshold (1.00%)
+    n0: 19104 in 10 places, all below massif's threshold (1.00%)
+   n1: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 86496 in 2 places, all below massif's threshold (1.00%)
+   n1: 79344 0x9C22EE6: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 79344 in 522 places, all below massif's threshold (1.00%)
+  n0: 203350 in 164 places, all below massif's threshold (1.00%)
+ n0: 463151 in 383 places, all below massif's threshold (1.00%)
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+#-----------
+snapshot=57
+#-----------
+time=179330396
+mem_heap_B=6257181
+mem_heap_extra_B=432979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=179837055
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=180350095
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=180863145
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=181376185
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=181889235
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=182402275
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=182915325
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=183428937
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=183941987
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=detailed
+n3: 6256061 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5721326 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n21: 5517976 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n0: 1774776 in 1363 places, all below massif's threshold (1.00%)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n3: 427616 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 238464 in 127 places, all below massif's threshold (1.00%)
+    n1: 96048 0x9C22EC0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 96048 in 522 places, all below massif's threshold (1.00%)
+    n1: 93104 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 93104 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 93104 in 20 places, all below massif's threshold (1.00%)
+   n2: 300032 0x9C16618: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 187904 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 187904 in 287 places, all below massif's threshold (1.00%)
+    n0: 112128 in 35 places, all below massif's threshold (1.00%)
+   n1: 269696 0x9C7F416: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 269696 in 570 places, all below massif's threshold (1.00%)
+   n1: 170456 0x9C7F1A4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 170456 in 113 places, all below massif's threshold (1.00%)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n2: 130000 0x9C7F202: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16675: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 53664 in 105 places, all below massif's threshold (1.00%)
+   n1: 124032 0x9C7F05F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 124032 in 109 places, all below massif's threshold (1.00%)
+   n2: 121888 0x9C1663B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 45552 in 35 places, all below massif's threshold (1.00%)
+   n1: 112512 0x9C7D5E7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n2: 112512 0x9C1664C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 70464 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 70464 in 287 places, all below massif's threshold (1.00%)
+     n0: 42048 in 35 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E51: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E7E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 95616 0x9C7F3CD: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 95616 in 176 places, all below massif's threshold (1.00%)
+   n1: 92928 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 92928 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 92928 in 18 places, all below massif's threshold (1.00%)
+   n1: 89600 0x9C7F0F4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 89600 in 2 places, all below massif's threshold (1.00%)
+   n2: 88992 0x9C16DF3: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 69888 0x9C18FC1: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 69888 in 11 places, all below massif's threshold (1.00%)
+    n0: 19104 in 10 places, all below massif's threshold (1.00%)
+   n1: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 86496 in 2 places, all below massif's threshold (1.00%)
+   n1: 79344 0x9C22EE6: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 79344 in 522 places, all below massif's threshold (1.00%)
+  n0: 203350 in 164 places, all below massif's threshold (1.00%)
+ n0: 462031 in 383 places, all below massif's threshold (1.00%)
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+#-----------
+snapshot=67
+#-----------
+time=184455027
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=184968077
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=185494882
+mem_heap_B=6256365
+mem_heap_extra_B=432907
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=186005813
+mem_heap_B=6256245
+mem_heap_extra_B=432899
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=186512615
+mem_heap_B=6256009
+mem_heap_extra_B=432839
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=187027525
+mem_heap_B=6256217
+mem_heap_extra_B=432879
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=187538473
+mem_heap_B=6256081
+mem_heap_extra_B=432871
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=188052037
+mem_heap_B=6256113
+mem_heap_extra_B=432887
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=188566186
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=189079236
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=detailed
+n3: 6256061 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 5721326 0x9C8C95B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+  n21: 5517976 0x9C8CA3C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+   n0: 1774776 in 1363 places, all below massif's threshold (1.00%)
+   n2: 997696 0x9C8DAFE: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 562976 0x9EE3CA7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 562976 0x9EE468C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 562976 0x9E8876F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 562976 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 562976 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+         n1: 562976 0x80DB845: ???
+          n1: 562976 0x80AFA1F: ???
+           n1: 562976 0x80AAF7F: ???
+            n1: 562976 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 562976 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 562976 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+               n1: 562976 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+                n0: 562976 0x425C76: main (RenderTest.cpp:21)
+    n1: 434720 0x9F468FB: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 434720 0x9E88777: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n1: 434720 0x9DBD59D: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+       n1: 434720 0x9D51C6E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+        n1: 434720 0x80DB845: ???
+         n1: 434720 0x80AFA1F: ???
+          n1: 434720 0x80AAF7F: ???
+           n1: 434720 0x5044A64: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+            n1: 434720 0x503DE53: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+             n1: 434720 0x503A9BB: glfwInit (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+              n1: 434720 0x420D16: RenderEngine::RenderEngine() (RenderEngine.cpp:21)
+               n0: 434720 0x425C76: main (RenderTest.cpp:21)
+   n3: 427616 0x9C156C8: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 238464 in 127 places, all below massif's threshold (1.00%)
+    n1: 96048 0x9C22EC0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 96048 in 522 places, all below massif's threshold (1.00%)
+    n1: 93104 0x9C159F0: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 93104 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 93104 in 20 places, all below massif's threshold (1.00%)
+   n2: 300032 0x9C16618: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 187904 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 187904 in 287 places, all below massif's threshold (1.00%)
+    n0: 112128 in 35 places, all below massif's threshold (1.00%)
+   n1: 269696 0x9C7F416: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 269696 in 570 places, all below massif's threshold (1.00%)
+   n1: 170456 0x9C7F1A4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 170456 in 113 places, all below massif's threshold (1.00%)
+   n1: 161544 0x9D8E30B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 161544 0x9D5191F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 161544 0x80DB36D: ???
+      n1: 161544 0x80AA8A0: ???
+       n1: 161544 0x5044470: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+        n1: 161544 0x5041A05: ??? (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+         n1: 161544 0x503CB68: glfwCreateWindow (in /usr/lib/x86_64-linux-gnu/libglfw.so.3.1)
+          n1: 161544 0x420D62: RenderEngine::RenderEngine() (RenderEngine.cpp:26)
+           n0: 161544 0x425C76: main (RenderTest.cpp:21)
+   n2: 130000 0x9C7F202: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16675: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 53664 in 105 places, all below massif's threshold (1.00%)
+   n1: 124032 0x9C7F05F: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 124032 in 109 places, all below massif's threshold (1.00%)
+   n2: 121888 0x9C1663B: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 76336 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 76336 in 287 places, all below massif's threshold (1.00%)
+    n0: 45552 in 35 places, all below massif's threshold (1.00%)
+   n1: 112512 0x9C7D5E7: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n2: 112512 0x9C1664C: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n1: 70464 0x9C16666: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+      n0: 70464 in 287 places, all below massif's threshold (1.00%)
+     n0: 42048 in 35 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E51: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 100224 0x9C22E7E: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 100224 in 522 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C15986: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 97152 0x9C1594A: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 97152 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 97152 in 20 places, all below massif's threshold (1.00%)
+   n1: 95616 0x9C7F3CD: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 95616 in 176 places, all below massif's threshold (1.00%)
+   n1: 92928 0x9C15A63: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 92928 0x9C18E78: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 92928 in 18 places, all below massif's threshold (1.00%)
+   n1: 89600 0x9C7F0F4: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 89600 in 2 places, all below massif's threshold (1.00%)
+   n2: 88992 0x9C16DF3: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n1: 69888 0x9C18FC1: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+     n0: 69888 in 11 places, all below massif's threshold (1.00%)
+    n0: 19104 in 10 places, all below massif's threshold (1.00%)
+   n1: 86496 0x9C8DA80: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 86496 in 2 places, all below massif's threshold (1.00%)
+   n1: 79344 0x9C22EE6: ??? (in /usr/lib/x86_64-linux-gnu/dri/i965_dri.so)
+    n0: 79344 in 522 places, all below massif's threshold (1.00%)
+  n0: 203350 in 164 places, all below massif's threshold (1.00%)
+ n0: 462031 in 385 places, all below massif's threshold (1.00%)
+ n1: 72704 0x52D4EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40106B8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40107C9: _dl_init (dl-init.c:30)
+    n0: 72704 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+#-----------
+snapshot=77
+#-----------
+time=189592276
+mem_heap_B=6256061
+mem_heap_extra_B=432843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=190117767
+mem_heap_B=6101966
+mem_heap_extra_B=425738
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=190623867
+mem_heap_B=5319215
+mem_heap_extra_B=380225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=191129964
+mem_heap_B=3322302
+mem_heap_extra_B=246562
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=191636032
+mem_heap_B=1691232
+mem_heap_extra_B=118792
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=192142114
+mem_heap_B=196554
+mem_heap_extra_B=9502
+mem_stacks_B=0
+heap_tree=empty

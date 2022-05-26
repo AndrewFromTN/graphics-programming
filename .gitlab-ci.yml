@@ -1,0 +1,6 @@
+image: "registry.gitlab.com/ajharris42/engineproject:clang6.0"
+
+app:
+  stage: build
+  script:
+    - make
